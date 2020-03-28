@@ -51,7 +51,7 @@ endif()
 
 # -- Options for shared lib and strict cxx flags (defaults on)
 #option(qp-bundle_USE_STRICT_CXX_FLAGS "Use strict CXX Flags on compile" ON)
-option(qp-bundle_build_shared_libs "build shared libraries" ON)
+option(qp-bundle_build_shared_libs "build shared libraries" OFF)
 set(BUILD_SHARED_LIBS ${qp-bundle_build_shared_libs})
 
 # -- Add qpcpp

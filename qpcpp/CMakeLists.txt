@@ -12,19 +12,6 @@ macro(INSTALL_WITH_HIERARCHY FILE_LIST DEST)
 	endforeach(F)
 endmacro(INSTALL_WITH_HIERARCHY)
 
-set (QPCPP_PUBLIC_HEADERS
-	${CMAKE_CURRENT_LIST_DIR}/include/qassert.h
-	${CMAKE_CURRENT_LIST_DIR}/include/qep.hpp
-	${CMAKE_CURRENT_LIST_DIR}/include/qequeue.hpp
-	${CMAKE_CURRENT_LIST_DIR}/include/qf.hpp
-	${CMAKE_CURRENT_LIST_DIR}/include/qk.hpp
-	${CMAKE_CURRENT_LIST_DIR}/include/qmpool.hpp
-	${CMAKE_CURRENT_LIST_DIR}/include/qpcpp.hpp
-	${CMAKE_CURRENT_LIST_DIR}/include/qpset.hpp
-	${CMAKE_CURRENT_LIST_DIR}/include/qs_dummy.hpp
-	${CMAKE_CURRENT_LIST_DIR}/include/qv.hpp
-)
-
 add_library(${POSIX_QV} "")
 add_library(qpcpp::${POSIX_QV} ALIAS ${POSIX_QV})
 
@@ -45,8 +32,25 @@ target_compile_options(
 
 target_compile_definitions(${POSIX_QV} PUBLIC QP_API_VERSION=9999)
 
-target_sources(${POSIX_QV}
-PRIVATE
+set (${POSIX_QV}_PUBLIC_HEADERS
+	${CMAKE_CURRENT_LIST_DIR}/include/qassert.h
+	${CMAKE_CURRENT_LIST_DIR}/include/qep.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qequeue.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qf.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qk.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qmpool.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qpcpp.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qpset.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qs_dummy.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qv.hpp
+
+	${CMAKE_CURRENT_LIST_DIR}/ports/posix-qv/qf_port.hpp
+	${CMAKE_CURRENT_LIST_DIR}/ports/posix-qv/qep_port.hpp
+)
+
+target_sources(
+	${POSIX_QV}
+	PRIVATE
 	${CMAKE_CURRENT_LIST_DIR}/src/qf/qep_hsm.cpp
 	${CMAKE_CURRENT_LIST_DIR}/src/qf/qep_msm.cpp
 	${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_act.cpp
@@ -74,12 +78,18 @@ PRIVATE
 	${CMAKE_CURRENT_BINARY_DIR}
 )
 
+target_link_libraries(
+	${POSIX_QV}
+	PUBLIC
+	Threads::Threads
+)
+
 set_target_properties(${POSIX_QV} PROPERTIES VERSION ${${CMAKE_PROJECT_NAME}_VERSION_SHORT})
 set_target_properties(${POSIX_QV} PROPERTIES SOVERSION ${${CMAKE_PROJECT_NAME}_VERSION_SHORT})
 set_target_properties(${POSIX_QV}
 	PROPERTIES
 		PUBLIC_HEADER
-		"${QPCPP_PUBLIC_HEADERS}"
+		"${${POSIX_QV}_PUBLIC_HEADERS}"
 )
 
 # add the install targets
@@ -89,7 +99,7 @@ install (
   	LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT shlib
 	ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
 	PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${POSIX_QV}
-	INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+	INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${POSIX_QV}
 )
 
 
@@ -102,7 +112,7 @@ write_basic_package_version_file(
 
 export(EXPORT ${POSIX_QV}_targets
 	FILE "${CMAKE_CURRENT_BINARY_DIR}/${POSIX_QV}/${POSIX_QV}-targets.cmake"
-	NAMESPACE qpcpp::
+	NAMESPACE qp::
 )
 
 configure_file(cmake/${POSIX_QV}-config.cmake
@@ -114,7 +124,7 @@ set(ConfigPackageLocation lib/cmake/${POSIX_QV})
 
 install(EXPORT ${POSIX_QV}_targets
 	FILE ${POSIX_QV}-targets.cmake
-	NAMESPACE qpcpp::
+	NAMESPACE qp::
 	DESTINATION ${ConfigPackageLocation}
 )
 
@@ -145,8 +155,25 @@ target_compile_options(
 
 target_compile_definitions(${POSIX} PUBLIC QP_API_VERSION=9999)
 
-target_sources(${POSIX}
-PRIVATE
+set (${POSIX}_PUBLIC_HEADERS
+	${CMAKE_CURRENT_LIST_DIR}/include/qassert.h
+	${CMAKE_CURRENT_LIST_DIR}/include/qep.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qequeue.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qf.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qk.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qmpool.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qpcpp.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qpset.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qs_dummy.hpp
+	${CMAKE_CURRENT_LIST_DIR}/include/qv.hpp
+
+	${CMAKE_CURRENT_LIST_DIR}/ports/posix/qf_port.hpp
+	${CMAKE_CURRENT_LIST_DIR}/ports/posix/qep_port.hpp
+)
+
+target_sources(
+	${POSIX}
+	PRIVATE
 	${CMAKE_CURRENT_LIST_DIR}/src/qf/qep_hsm.cpp
 	${CMAKE_CURRENT_LIST_DIR}/src/qf/qep_msm.cpp
 	${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_act.cpp
@@ -164,8 +191,9 @@ PRIVATE
 	${CMAKE_CURRENT_LIST_DIR}/include/qstamp.cpp
 )
 
-target_include_directories(${POSIX}
-PRIVATE
+target_include_directories(
+	${POSIX}
+	PRIVATE
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/ports/posix>
@@ -174,12 +202,18 @@ PRIVATE
 	${CMAKE_CURRENT_BINARY_DIR}
 )
 
+target_link_libraries(
+	${POSIX}
+	PUBLIC
+	Threads::Threads
+)
+
 set_target_properties(${POSIX} PROPERTIES VERSION ${${CMAKE_PROJECT_NAME}_VERSION_SHORT})
 set_target_properties(${POSIX} PROPERTIES SOVERSION ${${CMAKE_PROJECT_NAME}_VERSION_SHORT})
 set_target_properties(${POSIX}
 	PROPERTIES
 		PUBLIC_HEADER
-		"${QPCPP_PUBLIC_HEADERS}"
+		"${${POSIX}_PUBLIC_HEADERS}"
 )
 
 # add the install targets
@@ -189,7 +223,7 @@ install (
   	LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT shlib
 	ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
 	PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${POSIX}
-	INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+	INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${POSIX}
 )
 
 # -- write cmake package config file
