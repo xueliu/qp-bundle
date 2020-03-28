@@ -1,0 +1,17 @@
+"C:\tools\IAR\ARM_KS_8.40\arm\bin\armproc.dll" 
+
+"C:\tools\IAR\ARM_KS_8.40\arm\bin\armjlink2.dll" 
+
+"C:\qp_lab\qpc\examples\arm-cm\dpp_efm32-slstk3401a\qv\iar\dbg\dpp-qv.out" 
+
+--plugin="C:\tools\IAR\ARM_KS_8.40\arm\bin\armbat.dll" 
+
+--device_macro="C:\tools\IAR\ARM_KS_8.40\arm\config\debugger\SiliconLaboratories\Gecko_AAPv2.dmac" 
+
+--device_macro="C:\tools\IAR\ARM_KS_8.40\arm\config\debugger\SiliconLaboratories\Trace_xG1_xG14.dmac" 
+
+--flash_loader="C:\tools\IAR\ARM_KS_8.40\arm\config\flashloader\SiliconLaboratories\FlashGECKOP2.board" 
+
+
+
+

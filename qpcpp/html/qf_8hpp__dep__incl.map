@@ -1,0 +1,27 @@
+<map id="qf.hpp" name="qf.hpp">
+<area shape="rect" id="node1" title="QF/C++ platform&#45;independent public interface." alt="" coords="589,5,646,32"/>
+<area shape="rect" id="node2" href="$qk_2qf__port_8hpp.html" title="QF/C++ port to PC&#45;Lint&#45;Plus, Generic C++ compiler." alt="" coords="463,80,550,107"/>
+<area shape="rect" id="node3" href="$qv_2qf__port_8hpp.html" title="QF/C++ port to PC&#45;Lint&#45;Plus, Generic C++ compiler." alt="" coords="574,80,661,107"/>
+<area shape="rect" id="node4" href="$qxk_2qf__port_8hpp.html" title="QF/C++ port to PC&#45;Lint&#45;Plus, Generic C++ compiler." alt="" coords="685,80,771,107"/>
+<area shape="rect" id="node5" href="$qpcpp_8hpp.html" title="QP/C++ public interface including backwards&#45;compatibility layer." alt="" coords="5,229,88,256"/>
+<area shape="rect" id="node7" href="$qf__act_8cpp.html" title="QP::QActive services and QF support code." alt="" coords="112,229,195,256"/>
+<area shape="rect" id="node8" href="$qf__actq_8cpp.html" title="QP::QActive native queue operations (based on QP::QEQueue)" alt="" coords="219,229,309,256"/>
+<area shape="rect" id="node9" href="$qf__defer_8cpp.html" title="QP::QActive::defer() and QP::QActive::recall() definitions." alt="" coords="333,229,425,256"/>
+<area shape="rect" id="node10" href="$qf__dyn_8cpp.html" title="QF/C++ dynamic event management." alt="" coords="449,229,535,256"/>
+<area shape="rect" id="node11" href="$qf__mem_8cpp.html" title="QF/C++ memory management services." alt="" coords="559,229,652,256"/>
+<area shape="rect" id="node12" href="$qf__ps_8cpp.html" title="QF/C++ Publish&#45;Subscribe services definitions." alt="" coords="677,229,755,256"/>
+<area shape="rect" id="node13" href="$qf__qact_8cpp.html" title="QP::QActive::QActive() definition." alt="" coords="1058,155,1147,181"/>
+<area shape="rect" id="node14" href="$qf__qeq_8cpp.html" title="QP::QEQueue implementation." alt="" coords="780,229,865,256"/>
+<area shape="rect" id="node15" href="$qf__qmact_8cpp.html" title="QMActive::QMActive() and virtual functions." alt="" coords="1171,155,1271,181"/>
+<area shape="rect" id="node16" href="$qf__time_8cpp.html" title="QF/C++ time events and time management services." alt="" coords="1554,229,1643,256"/>
+<area shape="rect" id="node17" href="$qutest_8cpp.html" title="QF/C++ stub for QUTEST unit testing." alt="" coords="1668,229,1751,256"/>
+<area shape="rect" id="node18" href="$qv_8cpp.html" title="Cooperative QV kernel, definition of QP::QV_readySet_ and implementation of kernel&#45;specific functions..." alt="" coords="1775,229,1833,256"/>
+<area shape="rect" id="node19" href="$qs__port_8hpp.html" title="QS/C++ port to a 32&#45;bit CPU, generic compiler." alt="" coords="791,155,881,181"/>
+<area shape="rect" id="node6" href="$qpcpp_8h.html" title="QP/C++ public interface old&#45;version for backwards&#45;compatibility." alt="" coords="13,304,81,331"/>
+<area shape="rect" id="node20" href="$qep__hsm_8cpp.html" title="QP::QHsm implementation." alt="" coords="1215,229,1315,256"/>
+<area shape="rect" id="node21" href="$qep__msm_8cpp.html" title="QP::QMsm implementation." alt="" coords="1340,229,1444,256"/>
+<area shape="rect" id="node22" href="$qs_8cpp.html" title="QS software tracing services." alt="" coords="1468,229,1529,256"/>
+<area shape="rect" id="node23" href="$qs__64bit_8cpp.html" title="QS long&#45;long (64&#45;bit) output." alt="" coords="889,229,985,256"/>
+<area shape="rect" id="node24" href="$qs__fp_8cpp.html" title="QS floating point output implementation." alt="" coords="1010,229,1089,256"/>
+<area shape="rect" id="node25" href="$qs__rx_8cpp.html" title="QS receive channel services." alt="" coords="1113,229,1191,256"/>
+</map>

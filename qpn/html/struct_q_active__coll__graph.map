@@ -1,0 +1,7 @@
+<map id="QActive" name="QActive">
+<area shape="rect" id="node1" title="QActive active object (based on QHsm&#45;implementation)" alt="" coords="100,315,171,436"/>
+<area shape="rect" id="node2" href="$qepn_8h.html#struct_q_hsm" title="Hierarchical State Machine." alt="" coords="49,160,112,252"/>
+<area shape="rect" id="node3" href="$qepn_8h.html#struct_q_evt" title="Event structure." alt="" coords="5,5,57,97"/>
+<area shape="rect" id="node4" href="$struct_q_hsm_vtable.html" title="Virtual table for the QHsm class." alt="" coords="82,5,178,97"/>
+<area shape="rect" id="node5" href="$qfn_8h.html#struct_q_timer" title="Timer structure the active objects." alt="" coords="137,160,211,252"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="qf_port.h" name="qf_port.h">
+<area shape="rect" id="node1" title="QF/C port example for QXK, generic C compiler." alt="" coords="606,5,678,32"/>
+<area shape="rect" id="node2" href="$qpc_8h.html" title="QP/C public interface including backwards&#45;compatibility layer." alt="" coords="5,155,60,181"/>
+<area shape="rect" id="node3" href="$qf__act_8c.html" title="QActive services and ::QF support code" alt="" coords="84,155,152,181"/>
+<area shape="rect" id="node4" href="$qf__actq_8c.html" title="QActive native queue operations (based on QEQueue)" alt="" coords="177,155,251,181"/>
+<area shape="rect" id="node5" href="$qf__defer_8c.html" title="QActive_defer() and QActive_recall() implementation." alt="" coords="276,155,355,181"/>
+<area shape="rect" id="node6" href="$qf__dyn_8c.html" title="QF/C dynamic event management." alt="" coords="379,155,449,181"/>
+<area shape="rect" id="node7" href="$qf__mem_8c.html" title="QMPool implementatin (Memory Pool)" alt="" coords="473,155,552,181"/>
+<area shape="rect" id="node8" href="$qf__ps_8c.html" title="Publish&#45;Subscribe services." alt="" coords="577,155,641,181"/>
+<area shape="rect" id="node9" href="$qf__qact_8c.html" title="QActive_ctor() definition." alt="" coords="933,80,1007,107"/>
+<area shape="rect" id="node10" href="$qf__qeq_8c.html" title="QEQueue implementation (QP native thread&#45;safe queue)" alt="" coords="665,155,736,181"/>
+<area shape="rect" id="node11" href="$qf__qmact_8c.html" title="QMActive_ctor() definition." alt="" coords="1032,80,1119,107"/>
+<area shape="rect" id="node12" href="$qf__time_8c.html" title="QTimeEvt implementation and QF system clock tick QF_tickX_())" alt="" coords="1343,155,1418,181"/>
+<area shape="rect" id="node13" href="$qutest_8c.html" title="QF/C stub for QUTEST unit testing." alt="" coords="1442,155,1511,181"/>
+<area shape="rect" id="node14" href="$qv_8c.html" title="Cooperative QV kernel, definition of QP::QV_readySet_ and implementation of kernel&#45;specific functions..." alt="" coords="1535,155,1581,181"/>
+<area shape="rect" id="node15" href="$qs__port_8h.html" title="QS/C port to a 32&#45;bit CPU and a generic C compiler." alt="" coords="1143,80,1219,107"/>
+<area shape="rect" id="node16" href="$qxk_2qs__port_8h.html" title="QS/C port to a 32&#45;bit CPU and a generic C compiler." alt="" coords="680,80,756,107"/>
+<area shape="rect" id="node17" href="$qep__hsm_8c.html" title="QHsm implementation" alt="" coords="1045,155,1132,181"/>
+<area shape="rect" id="node18" href="$qep__msm_8c.html" title="QMsm implementation" alt="" coords="1157,155,1247,181"/>
+<area shape="rect" id="node19" href="$qs_8c.html" title="QS software tracing services." alt="" coords="1272,155,1319,181"/>
+<area shape="rect" id="node20" href="$qs__64bit_8c.html" title="QS long&#45;long (64&#45;bit) output." alt="" coords="761,155,843,181"/>
+<area shape="rect" id="node21" href="$qs__fp_8c.html" title="QS floating point output implementation." alt="" coords="867,155,931,181"/>
+<area shape="rect" id="node22" href="$qs__rx_8c.html" title="QS/C receive channel services." alt="" coords="956,155,1021,181"/>
+</map>

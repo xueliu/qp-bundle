@@ -1,0 +1,63 @@
+
+--- Module:   C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c (C)
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\dpp.h  52  info 1756: variable 'AO_Table' has 'static' storage duration 
+    and non-POD type 'struct Table'
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  118  warning 527: statement is unreachable due to unconditional 
+    transfer of control by 'non-returning call expression' statement [MISRA 2012 Rule 2.1, required]
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  146  warning 527: statement is unreachable due to unconditional 
+    transfer of control by 'non-returning call expression' statement [MISRA 2012 Rule 2.1, required]
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\philo.c  182  warning 527: statement is unreachable due to unconditional 
+    transfer of control by 'non-returning call expression' statement [MISRA 2012 Rule 2.1, required]
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c (C)
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  56  note 9026: function-like macro, 'RIGHT', defined 
+    [MISRA 2012 Directive 4.9, advisory]
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  57  note 9026: function-like macro, 'LEFT', defined 
+    [MISRA 2012 Directive 4.9, advisory]
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\dpp.h  37  info 1756: variable 'AO_Philo0' has 'static' storage duration 
+    and non-POD type 'struct Philo'
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\dpp.h  40  info 1756: variable 'AO_Philo1' has 'static' storage duration 
+    and non-POD type 'struct Philo'
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\dpp.h  43  info 1756: variable 'AO_Philo2' has 'static' storage duration 
+    and non-POD type 'struct Philo'
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\dpp.h  46  info 1756: variable 'AO_Philo3' has 'static' storage duration 
+    and non-POD type 'struct Philo'
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\dpp.h  49  info 1756: variable 'AO_Philo4' has 'static' storage duration 
+    and non-POD type 'struct Philo'
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  101  warning 527: statement is unreachable due to unconditional 
+    transfer of control by 'non-returning call expression' statement [MISRA 2012 Rule 2.1, required]
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  205  warning 527: statement is unreachable due to unconditional 
+    transfer of control by 'non-returning call expression' statement [MISRA 2012 Rule 2.1, required]
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  127  note 9029: a signed value and an unsigned value cannot be 
+    used together as operands to + [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpn\ports\lint-plus\qkn\qfn_port.h  100  supplemental 893: expanded from macro 'Q_ROM_PTR'
+C:\qp_lab\qpn\include\qfn.h  442  supplemental 893: expanded from macro 'QF_ACTIVE_CAST'
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  141  note 9029: an unsigned value and a signed value cannot be 
+    used together as operands to - [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  151  note 9029: a signed value and an unsigned value cannot be 
+    used together as operands to + [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpn\ports\lint-plus\qkn\qfn_port.h  100  supplemental 893: expanded from macro 'Q_ROM_PTR'
+C:\qp_lab\qpn\include\qfn.h  442  supplemental 893: expanded from macro 'QF_ACTIVE_CAST'
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  168  note 9029: an unsigned value and a signed value cannot be 
+    used together as operands to - [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  185  note 9029: a signed value and an unsigned value cannot be 
+    used together as operands to + [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpn\ports\lint-plus\qkn\qfn_port.h  100  supplemental 893: expanded from macro 'Q_ROM_PTR'
+C:\qp_lab\qpn\include\qfn.h  442  supplemental 893: expanded from macro 'QF_ACTIVE_CAST'
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  195  note 9029: a signed value and an unsigned value cannot be 
+    used together as operands to + [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpn\ports\lint-plus\qkn\qfn_port.h  100  supplemental 893: expanded from macro 'Q_ROM_PTR'
+C:\qp_lab\qpn\include\qfn.h  442  supplemental 893: expanded from macro 'QF_ACTIVE_CAST'
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  243  note 9029: an unsigned value and a signed value cannot be 
+    used together as operands to - [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpn\examples\arm-cm\dpp_ek-tm4c123gxl\table.c  255  note 9029: an unsigned value and a signed value cannot be 
+    used together as operands to - [MISRA 2012 Rule 10.4, required]
+--- Module Wrap-up
+Count   Type    Number  Text
+
+5       warning 527     statement is unreachable due to unconditional transfer of control by '__string__' statement
+8       supplemental    893     expanded from macro
+6       info    1756    variable __symbol__ has '__static/thread__' storage duration and non-POD type __type__
+2       note    9026    function-like macro, '__macro__', defined
+8       note    9029    __essential-type__ value and __essential-type__ value cannot be used together as operands to __operator__

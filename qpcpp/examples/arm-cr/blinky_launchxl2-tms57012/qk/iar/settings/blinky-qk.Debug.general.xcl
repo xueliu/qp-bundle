@@ -1,0 +1,15 @@
+"C:\tools\IAR\ARM_KS_8.40\arm\bin\armproc.dll" 
+
+"C:\tools\IAR\ARM_KS_8.40\arm\bin\armxds2.dll" 
+
+"C:\qp_lab\qpcpp\examples\arm-cr\blinky_launchxl2-tms57012\qk\iar\dbg\blinky-qk.out" 
+
+--plugin="C:\tools\IAR\ARM_KS_8.40\arm\bin\armbat.dll" 
+
+--device_macro="C:\tools\IAR\ARM_KS_8.40\arm\config\debugger\TexasInstruments\TMS570LS.dmac" 
+
+--flash_loader="C:\tools\IAR\ARM_KS_8.40\arm\config\flashloader\TexasInstruments\FlashTMS570LS12x.board" 
+
+
+
+

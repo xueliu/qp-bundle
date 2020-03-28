@@ -1,0 +1,284 @@
+
+--- Module:   C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c (C)
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  40  note 970: use of modifier or type 'double' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  41  note 970: use of modifier or type 'double' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  61  note 970: use of modifier or type 'double' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  251  note 970: use of modifier or type 'double' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  252  note 970: use of modifier or type 'double' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  544  note 970: use of modifier or type 'int' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  545  note 970: use of modifier or type 'int' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  718  note 970: use of modifier or type 'int' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  719  note 970: use of modifier or type 'int' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1093  note 970: use of modifier or type 'int' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1094  note 970: use of modifier or type 'int' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1135  note 970: use of modifier or type 'int' outside of a 
+    typedef [MISRA 2012 Directive 4.6, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  62  info 2701: variable 'Calc_inst' declared outside of header 
+    is not defined in the same source file
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  262  note 904: return statement before end of function 
+    'Calc_eval' [MISRA 2012 Rule 15.5, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  289  note 904: return statement before end of function 
+    'Calc_eval' [MISRA 2012 Rule 15.5, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  312  note 904: return statement before end of function 
+    'Calc_eval' [MISRA 2012 Rule 15.5, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  328  note 904: return statement before end of function 
+    'Calc_eval' [MISRA 2012 Rule 15.5, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  253  note 9029: an unsigned value and a character value cannot 
+    be used together as operands to == [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  253  note 9029: an unsigned value and a character value cannot 
+    be used together as operands to == [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  253  note 9029: an unsigned value and a character value cannot 
+    be used together as operands to == [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  300  note 9034: cannot assign 'character' to different 
+    essential type 'unsigned8' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  27  supplemental 893: expanded from macro 'KEY_NULL'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  450  info 764: switch with no cases 
+    [MISRA 2012 Rule 16.1, required], [MISRA 2012 Rule 16.6, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  450  note 9081: too few independent cases for switch 
+    [MISRA 2012 Rule 16.1, required], [MISRA 2012 Rule 16.6, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  463  note 9034: cannot assign 'character' to different 
+    essential type 'unsigned8' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  27  supplemental 893: expanded from macro 'KEY_NULL'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  525  note 9034: cannot assign 'unsigned8' to different 
+    essential type 'signed16' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\include\qep.h  188  supplemental 893: expanded from macro 'Q_EVT_CAST'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  590  info 764: switch with no cases 
+    [MISRA 2012 Rule 16.1, required], [MISRA 2012 Rule 16.6, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  590  note 9081: too few independent cases for switch 
+    [MISRA 2012 Rule 16.1, required], [MISRA 2012 Rule 16.6, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  619  note 9029: an unsigned value and a character value cannot 
+    be used together as operands to == [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  699  note 9034: cannot assign 'unsigned8' to different 
+    essential type 'signed16' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\include\qep.h  188  supplemental 893: expanded from macro 'Q_EVT_CAST'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  726  note 9029: an unsigned value and a character value cannot 
+    be used together as operands to == [MISRA 2012 Rule 10.4, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  885  note 9034: cannot assign 'character' to different 
+    essential type 'unsigned8' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  27  supplemental 893: expanded from macro 'KEY_NULL'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  935  info 764: switch with no cases 
+    [MISRA 2012 Rule 16.1, required], [MISRA 2012 Rule 16.6, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  935  note 9081: too few independent cases for switch 
+    [MISRA 2012 Rule 16.1, required], [MISRA 2012 Rule 16.6, required]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1076  note 9034: cannot assign 'unsigned8' to different 
+    essential type 'signed16' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\include\qep.h  188  supplemental 893: expanded from macro 'Q_EVT_CAST'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1142  note 9034: cannot assign 'unsigned8' to different 
+    essential type 'signed16' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\include\qep.h  188  supplemental 893: expanded from macro 'Q_EVT_CAST'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1180  note 9034: cannot assign 'unsigned8' to different 
+    essential type 'signed16' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\include\qep.h  188  supplemental 893: expanded from macro 'Q_EVT_CAST'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1223  note 9034: cannot assign 'unsigned8' to different 
+    essential type 'signed16' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\include\qep.h  188  supplemental 893: expanded from macro 'Q_EVT_CAST'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1240  note 9034: cannot assign 'unsigned8' to different 
+    essential type 'signed16' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\include\qep.h  188  supplemental 893: expanded from macro 'Q_EVT_CAST'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1257  note 9034: cannot assign 'unsigned8' to different 
+    essential type 'signed16' [MISRA 2012 Rule 10.3, required]
+C:\qp_lab\qpc\include\qep.h  188  supplemental 893: expanded from macro 'Q_EVT_CAST'
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1264  note 9029: an unsigned value and a character value 
+    cannot be used together as operands to == [MISRA 2012 Rule 10.4, required]
+--- Module Wrap-up
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  341  info 754: local struct member 'Calc_initial(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  342  info 754: local struct member 'Calc_initial(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  371  info 754: local struct member 'Calc_on_i(Calc 
+    *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  372  info 754: local struct member 'Calc_on_i(Calc 
+    *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  393  info 754: local struct member 'Calc_on(Calc *const, const 
+    QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  394  info 754: local struct member 'Calc_on(Calc *const, const 
+    QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  410  info 754: local struct member 'Calc_on(Calc *const, const 
+    QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  411  info 754: local struct member 'Calc_on(Calc *const, const 
+    QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  475  info 754: local struct member 'Calc_ready_i(Calc 
+    *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  476  info 754: local struct member 'Calc_ready_i(Calc 
+    *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  495  info 754: local struct member 'Calc_ready(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  496  info 754: local struct member 'Calc_ready(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  513  info 754: local struct member 'Calc_ready(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  514  info 754: local struct member 'Calc_ready(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  532  info 754: local struct member 'Calc_ready(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  533  info 754: local struct member 'Calc_ready(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  552  info 754: local struct member 'Calc_ready(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  553  info 754: local struct member 'Calc_ready(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  621  info 754: local struct member 'Calc_begin(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  622  info 754: local struct member 'Calc_begin(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  669  info 754: local struct member 'Calc_opEntered(Calc 
+    *const, const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  670  info 754: local struct member 'Calc_opEntered(Calc 
+    *const, const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  687  info 754: local struct member 'Calc_opEntered(Calc 
+    *const, const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  688  info 754: local struct member 'Calc_opEntered(Calc 
+    *const, const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  706  info 754: local struct member 'Calc_opEntered(Calc 
+    *const, const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  707  info 754: local struct member 'Calc_opEntered(Calc 
+    *const, const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  728  info 754: local struct member 'Calc_opEntered(Calc 
+    *const, const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  729  info 754: local struct member 'Calc_opEntered(Calc 
+    *const, const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  764  info 754: local struct member 'Calc_operand1_CE(Calc 
+    *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  765  info 754: local struct member 'Calc_operand1_CE(Calc 
+    *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  786  info 754: local struct member 'Calc_operand1(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  787  info 754: local struct member 'Calc_operand1(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  802  info 754: local struct member 'Calc_operand1(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  803  info 754: local struct member 'Calc_operand1(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  832  info 754: local struct member 'Calc_operand2_CE(Calc 
+    *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  833  info 754: local struct member 'Calc_operand2_CE(Calc 
+    *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  855  info 754: local struct member 'Calc_operand2(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  856  info 754: local struct member 'Calc_operand2(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  869  info 754: local struct member 'Calc_operand2(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  870  info 754: local struct member 'Calc_operand2(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  889  info 754: local struct member 'Calc_operand2(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  890  info 754: local struct member 'Calc_operand2(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  904  info 754: local struct member 'Calc_operand2(Calc *const, 
+    const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  905  info 754: local struct member 'Calc_operand2(Calc *const, 
+    const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  983  info 754: local struct member 'Calc_operand_zero_ep(Calc 
+    *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  984  info 754: local struct member 'Calc_operand_zero_ep(Calc 
+    *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  998  info 754: local struct member 'Calc_operand_intgr_ep(Calc 
+    *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  999  info 754: local struct member 'Calc_operand_intgr_ep(Calc 
+    *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1013  info 754: local struct member 'Calc_operand_frac_ep(Calc 
+    *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1014  info 754: local struct member 'Calc_operand_frac_ep(Calc 
+    *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1028  info 754: local struct member 'Calc_operand_neg_ep(Calc 
+    *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1029  info 754: local struct member 'Calc_operand_neg_ep(Calc 
+    *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1066  info 754: local struct member 'Calc_operand_zero(Calc 
+    *const, const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1067  info 754: local struct member 'Calc_operand_zero(Calc 
+    *const, const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1083  info 754: local struct member 'Calc_operand_zero(Calc 
+    *const, const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1084  info 754: local struct member 'Calc_operand_zero(Calc 
+    *const, const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1125  info 754: local struct member 'Calc_operand_intgr(Calc 
+    *const, const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1126  info 754: local struct member 'Calc_operand_intgr(Calc 
+    *const, const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1213  info 754: local struct member 'Calc_operand_negated(Calc 
+    *const, const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1214  info 754: local struct member 'Calc_operand_negated(Calc 
+    *const, const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1230  info 754: local struct member 'Calc_operand_negated(Calc 
+    *const, const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1231  info 754: local struct member 'Calc_operand_negated(Calc 
+    *const, const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1247  info 754: local struct member 'Calc_operand_negated(Calc 
+    *const, const QEvt *const)::(anonymous struct)::target' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1248  info 754: local struct member 'Calc_operand_negated(Calc 
+    *const, const QEvt *const)::(anonymous struct)::act' not referenced
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  357  info 818: parameter 'me' of function 
+    'Calc_on_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  363  info 818: parameter 'me' of function 
+    'Calc_on_x(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  436  info 818: parameter 'me' of function 
+    'Calc_error_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  442  info 818: parameter 'me' of function 
+    'Calc_error_x(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  448  info 818: parameter 'me' of function 'Calc_error(Calc 
+    *const, const QEvt *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  467  info 818: parameter 'me' of function 
+    'Calc_ready_x(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  576  info 818: parameter 'me' of function 
+    'Calc_result_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  582  info 818: parameter 'me' of function 
+    'Calc_result_x(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  588  info 818: parameter 'me' of function 'Calc_result(Calc 
+    *const, const QEvt *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  601  info 818: parameter 'me' of function 
+    'Calc_begin_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  607  info 818: parameter 'me' of function 
+    'Calc_begin_x(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  651  info 818: parameter 'me' of function 
+    'Calc_opEntered_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  657  info 818: parameter 'me' of function 
+    'Calc_opEntered_x(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  926  info 818: parameter 'me' of function 
+    'Calc_final_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  933  info 818: parameter 'me' of function 'Calc_final(Calc 
+    *const, const QEvt *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  946  info 818: parameter 'me' of function 
+    'Calc_operand_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1042  info 818: parameter 'me' of function 
+    'Calc_operand_zero_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1048  info 818: parameter 'me' of function 
+    'Calc_operand_zero_x(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1107  info 818: parameter 'me' of function 
+    'Calc_operand_intgr_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1113  info 818: parameter 'me' of function 
+    'Calc_operand_intgr_x(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1156  info 818: parameter 'me' of function 
+    'Calc_operand_frac_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1162  info 818: parameter 'me' of function 
+    'Calc_operand_frac_x(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1168  info 818: parameter 'me' of function 
+    'Calc_operand_frac(Calc *const, const QEvt *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1194  info 818: parameter 'me' of function 
+    'Calc_operand_negated_e(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+C:\qp_lab\qpc\examples\workstation\calc1_sub\calc1_sub.c  1201  info 818: parameter 'me' of function 
+    'Calc_operand_negated_x(Calc *const)' could be pointer to const [MISRA 2012 Rule 8.13, advisory]
+Count   Type    Number  Text
+
+64      info    754     local __string__ member __symbol__ not referenced
+3       info    764     switch with no cases
+25      info    818     parameter __symbol__ of function __symbol__ could be pointer to const
+11      supplemental    893     expanded from macro
+4       note    904     return statement before end of function __symbol__
+12      note    970     use of modifier or type '__name__' outside of a typedef
+1       info    2701    __variable/function__ __symbol__ declared outside of header is not defined in the same source file
+6       note    9029    __essential-type__ value and __essential-type__ value cannot be used together as operands to __operator__
+11      note    9034    cannot assign '__essential-type__' to __narrow/different__ essential type '__essential-type__'
+3       note    9081    too few independent cases for switch

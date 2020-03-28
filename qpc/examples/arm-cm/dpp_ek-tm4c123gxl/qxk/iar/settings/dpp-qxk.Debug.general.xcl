@@ -1,0 +1,15 @@
+"C:\tools\IAR\ARM_KS_8.40\arm\bin\armproc.dll" 
+
+"C:\tools\IAR\ARM_KS_8.40\arm\bin\armlmiftdi.dll" 
+
+"C:\qp_lab\qpc\examples\arm-cm\dpp_ek-tm4c123gxl\qxk\iar\dbg\dpp-qxk.out" 
+
+--plugin="C:\tools\IAR\ARM_KS_8.40\arm\bin\armbat.dll" 
+
+--device_macro="C:\tools\IAR\ARM_KS_8.40\arm\config\debugger\TexasInstruments\TM4C123.dmac" 
+
+--flash_loader="C:\tools\IAR\ARM_KS_8.40\arm\config\flashloader\TexasInstruments\FlashTC4_H6_o.board" 
+
+
+
+

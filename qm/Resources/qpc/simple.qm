@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model version="4.5.1" links="0">
+ <documentation>Simple model template for QP/C</documentation>
+ <framework name="qpc"/>
+ <package name="Events" stereotype="0x01">
+  <class name="MyEvt" superclass="qpc::QEvt"/>
+ </package>
+ <package name="AOs" stereotype="0x02">
+  <class name="MyAO" superclass="qpc::QActive">
+   <documentation>Test active object</documentation>
+   <operation name="ctor" type="void" visibility="0x00" properties="0x00">
+    <documentation>&quot;Constructor&quot; for MyAO active object</documentation>
+    <code>QActive_ctor(&amp;me-&gt;super, Q_STATE_CAST(&amp;MyAO_initial));</code>
+   </operation>
+   <statechart properties="0x01">
+    <initial target="../1">
+     <initial_glyph conn="6,2,5,1,36,6,-2">
+      <action box="0,-2,10,2"/>
+     </initial_glyph>
+    </initial>
+    <state name="state1">
+     <state_glyph node="6,6,34,22"/>
+    </state>
+    <state_diagram size="80,50"/>
+   </statechart>
+  </class>
+ </package>
+ <directory name=".">
+  <file name="project.h">
+   <text>#ifndef project_h
+#define project_h
+
+$declare(AOs::MyAO)
+
+/* declare other elements... */
+
+#endif /* project_h */</text>
+  </file>
+  <file name="myao.c">
+   <text>#include &quot;qpc.h&quot;
+#include &quot;project.h&quot;
+
+$define(AOs::MyAO)
+
+/* define other elements... */</text>
+  </file>
+ </directory>
+</model>

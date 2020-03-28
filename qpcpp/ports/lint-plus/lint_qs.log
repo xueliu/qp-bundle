@@ -1,0 +1,116 @@
+
+--- Module:   C:\qp_lab\qpcpp\src\qs\qs.cpp (C++)
+C:\qp_lab\qpcpp\src\qs\qs.cpp  366  note 9126: the result of the << operator applied to an object with an underlying 
+    type of 'unsigned char' must be cast to 'unsigned char' in this context [AUTOSAR Rule M5-0-10]
+C:\qp_lab\qpcpp\src\qs\qs.cpp  371  note 9126: the result of the << operator applied to an object with an underlying 
+    type of 'unsigned char' must be cast to 'unsigned char' in this context [AUTOSAR Rule M5-0-10]
+C:\qp_lab\qpcpp\src\qs\qs.cpp  374  info 734: loss of precision (call) from 12 bits to 8 bits
+C:\qp_lab\qpcpp\src\qs\qs.cpp  375  info 734: loss of precision (call) from 12 bits to 8 bits
+C:\qp_lab\qpcpp\src\qs\qs.cpp  377  info 732: loss of sign (call) ('int' to 'const std::uint8_t' 
+    (aka 'const unsigned char'))
+C:\qp_lab\qpcpp\src\qs\qs.cpp  380  info 734: loss of precision (call) from 12 bits to 8 bits
+C:\qp_lab\qpcpp\src\qs\qs.cpp  385  info 732: loss of sign (call) ('int' to 'const std::uint8_t' 
+    (aka 'const unsigned char'))
+C:\qp_lab\qpcpp\src\qs\qs.cpp  388  info 734: loss of precision (call) from 12 bits to 8 bits
+C:\qp_lab\qpcpp\src\qs\qs.cpp  434  info 734: loss of precision (call) from 12 bits to 8 bits
+C:\qp_lab\qpcpp\src\qs\qs.cpp  671  note 9091: casting from pointer type 'const void *const' to integer type 
+    'std::uint32_t' (aka 'unsigned long') [AUTOSAR Rule M5-2-9]
+--- Module Wrap-up
+C:\qp_lab\qpcpp\src\qs\qs.cpp  859  note 952: parameter 'delay' of function 'QP::QS::assertion_pre_(const char_t *const, 
+    const int_t, std::uint32_t)' could be const [AUTOSAR Rule M7-1-1]
+
+--- Module:   C:\qp_lab\qpcpp\src\qs\qs_64bit.cpp (C++)
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpcpp\src\qs\qs_fp.cpp (C++)
+C:\qp_lab\qpcpp\src\qs\qs_fp.cpp  95  info 708: union initialization
+--- Module Wrap-up
+C:\qp_lab\qpcpp\src\qs\qs_fp.cpp  93  info 754: local union member 'QP::QS::f64_fmt_(std::uint8_t, const 
+    float64_t)::U32Rep::u32' not referenced
+
+--- Module:   C:\qp_lab\qpcpp\src\qs\qs_rx.cpp (C++)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  137  note 9018: union 'QP::ExtState::Variant' declared [AUTOSAR Rule M9-5-1]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  745  note 9016: performing pointer arithmetic via addition [AUTOSAR Rule M5-0-15]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  878  note 9016: performing pointer arithmetic via addition [AUTOSAR Rule M5-0-15]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  876  note 9079: conversion from pointer to void to other pointer type 
+    ('std::uint8_t *' (aka 'unsigned char *')) [AUTOSAR Rule M5-2-8]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  886  note 9016: performing pointer arithmetic via addition [AUTOSAR Rule M5-0-15]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  890  note 9016: performing pointer arithmetic via addition [AUTOSAR Rule M5-0-15]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  890  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  894  note 9016: performing pointer arithmetic via addition [AUTOSAR Rule M5-0-15]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  894  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  918  note 9016: performing pointer arithmetic via addition [AUTOSAR Rule M5-0-15]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  916  note 9079: conversion from pointer to void to other pointer type 
+    ('std::uint8_t *' (aka 'unsigned char *')) [AUTOSAR Rule M5-2-8]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  922  note 9016: performing pointer arithmetic via addition [AUTOSAR Rule M5-0-15]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  926  note 9016: performing pointer arithmetic via addition [AUTOSAR Rule M5-0-15]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  926  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  930  note 9016: performing pointer arithmetic via addition [AUTOSAR Rule M5-0-15]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  930  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1001  note 9079: conversion from pointer to void to other pointer type 
+    ('std::uint8_t *' (aka 'unsigned char *')) [AUTOSAR Rule M5-2-8]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1010  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1015  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1017  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1021  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1023  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1027  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1029  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1033  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1035  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1037  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1039  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1041  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1102  note 9079: conversion from pointer to void to other pointer type ('QP::QHsm *') 
+    [AUTOSAR Rule M5-2-8]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1119  note 9079: conversion from pointer to void to other pointer type ('QP::QHsm *') 
+    [AUTOSAR Rule M5-2-8]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1130  note 9079: conversion from pointer to void to other pointer type 
+    ('QP::QActive *') [AUTOSAR Rule M5-2-8]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1248  note 9016: performing pointer arithmetic via addition [AUTOSAR Rule M5-0-15]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1247  note 9079: conversion from pointer to void to other pointer type 
+    ('std::uint8_t *' (aka 'unsigned char *')) [AUTOSAR Rule M5-2-8]
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1254  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1258  info 826: suspicious pointer-to-pointer conversion (area too small)
+C:\qp_lab\qpcpp\src\qs\qs_rx.cpp  1288  note 9091: casting from pointer type 'void (*const)()' to integer type 
+    'QP::QSFun' (aka 'unsigned long') [AUTOSAR Rule M5-2-9]
+--- Module Wrap-up
+
+--- Module:   C:\qp_lab\qpcpp\src\qs\qutest.cpp (C++)
+C:\qp_lab\qpcpp\src\qs\qutest.cpp  115  info 1731: public virtual function 'QP::QActiveDummy::start(const 
+    std::uint_fast8_t, const struct QP::QEvt **const, const std::uint_fast16_t, void *const, const std::uint_fast16_t, 
+    const void *const)'
+C:\qp_lab\qpcpp\src\qs\qutest.cpp  131  note 1933: call to unqualified virtual function 'QP::QActiveDummy::init' from 
+    non-static member function
+C:\qp_lab\qpcpp\src\qs\qutest.cpp  135  info 1731: public virtual function 'QP::QActiveDummy::init(const void *const)'
+C:\qp_lab\qpcpp\src\qs\qutest.cpp  146  info 1731: public virtual function 'QP::QActiveDummy::dispatch(const struct 
+    QP::QEvt *const)'
+C:\qp_lab\qpcpp\src\qs\qutest.cpp  156  info 1731: public virtual function 'QP::QActiveDummy::post_(const struct 
+    QP::QEvt *const, const std::uint_fast16_t, const void *const)'
+C:\qp_lab\qpcpp\src\qs\qutest.cpp  180  note 9114: implicit conversion of underlying type of integer cvalue expression 
+    from 'unsigned char' to 'std::uint_fast8_t' (aka 'unsigned int') [AUTOSAR Rule M5-0-3]
+C:\qp_lab\qpcpp\src\qs\qutest.cpp  212  info 1731: public virtual function 'QP::QActiveDummy::postLIFO(const struct 
+    QP::QEvt *const)'
+C:\qp_lab\qpcpp\src\qs\qutest.cpp  306  note 9079: conversion from pointer to void to other pointer type 
+    ('QP::QTimeEvt *') [AUTOSAR Rule M5-2-8]
+C:\qp_lab\qpcpp\src\qs\qutest.cpp  312  note 9079: conversion from pointer to void to other pointer type 
+    ('QP::QActive *') [AUTOSAR Rule M5-2-8]
+--- Module Wrap-up
+C:\qp_lab\qpcpp\src\qs\qutest.cpp  180  note 953: local variable 'rec' could be const [AUTOSAR Rule M7-1-1]
+Count   Type    Number  Text
+
+1       info    708     union initialization
+2       info    732     loss of sign (__context__) (__type__ to __type__)
+5       info    734     loss of precision (__context__) from __number__ bits to __number__ bits
+1       info    754     local __string__ member __symbol__ not referenced
+18      info    826     suspicious pointer-to-pointer conversion (area too small)
+1       note    952     parameter __symbol__ of function __symbol__ could be const
+1       note    953     local variable __symbol__ could be const
+5       info    1731    public virtual function __symbol__
+1       note    1933    call to unqualified virtual function __symbol__ from non-static member function
+10      note    9016    performing pointer arithmetic via __addition/subtraction__
+1       note    9018    union __symbol__ declared
+9       note    9079    conversion from pointer to void to other pointer type (__type__)
+2       note    9091    casting from pointer type __type__ to integer type __type__
+1       note    9114    implicit conversion of underlying type of integer cvalue expression from __underlying-type__ to __underlying type__
+2       note    9126    the result of the __operator__ operator applied to an object with an underlying type of __underlying-type__ must be cast to __type__ in this context
