@@ -257,3 +257,141 @@ install(
 	DESTINATION ${ConfigPackageLocation}
 	COMPONENT Devel
 )
+
+add_library(${POSIX_QUTEST} "")
+add_library(qp::${POSIX_QUTEST} ALIAS ${POSIX_QUTEST})
+
+target_compile_options(
+		${POSIX_QUTEST}
+		PRIVATE
+		-c
+		-g
+		-O
+		#	-fno-pie
+		-pedantic
+		-Wall
+		-Wextra
+		#	-fno-rtti # we need rtti
+		-fno-exceptions
+		-fPIC # is it necessary
+)
+
+target_compile_definitions(${POSIX_QUTEST} PUBLIC Q_SPY)
+
+set (${POSIX_QUTEST}_PUBLIC_HEADERS
+		${CMAKE_CURRENT_LIST_DIR}/include/qassert.h
+		${CMAKE_CURRENT_LIST_DIR}/include/qep.hpp
+		${CMAKE_CURRENT_LIST_DIR}/include/qequeue.hpp
+		${CMAKE_CURRENT_LIST_DIR}/include/qf.hpp
+		${CMAKE_CURRENT_LIST_DIR}/include/qk.hpp
+		${CMAKE_CURRENT_LIST_DIR}/include/qmpool.hpp
+		${CMAKE_CURRENT_LIST_DIR}/include/qpcpp.hpp
+		${CMAKE_CURRENT_LIST_DIR}/include/qpset.hpp
+		${CMAKE_CURRENT_LIST_DIR}/include/qs.hpp
+		${CMAKE_CURRENT_LIST_DIR}/include/qv.hpp
+
+		${CMAKE_CURRENT_LIST_DIR}/ports/posix-qutest/qf_port.hpp
+		${CMAKE_CURRENT_LIST_DIR}/ports/posix-qutest/qep_port.hpp
+		${CMAKE_CURRENT_LIST_DIR}/ports/posix-qutest/qs_port.hpp
+		)
+
+target_sources(
+		${POSIX_QUTEST}
+		PRIVATE
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qep_hsm.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qep_msm.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_act.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_actq.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_defer.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_dyn.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_mem.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_ps.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_qact.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_qeq.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_qmact.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qf/qf_time.cpp
+
+		${CMAKE_CURRENT_LIST_DIR}/include/qstamp.cpp
+
+		${CMAKE_CURRENT_LIST_DIR}/ports/posix-qutest/qutest_port.cpp
+
+		${CMAKE_CURRENT_LIST_DIR}/src/qs/qs.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qs/qs_64bit.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qs/qs_rx.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qs/qs_fp.cpp
+		${CMAKE_CURRENT_LIST_DIR}/src/qs/qutest.cpp
+)
+
+target_include_directories(
+		${POSIX_QUTEST}
+		PRIVATE
+		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
+		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/ports/posix-qutest>
+		$<INSTALL_INTERFACE:include>
+		${CMAKE_CURRENT_LIST_DIR}
+		${CMAKE_CURRENT_BINARY_DIR}
+)
+
+target_compile_options(
+		${POSIX_QUTEST}
+		PUBLIC
+		-DQ_SPY
+		-DQ_UTEST
+)
+
+target_link_libraries(
+		${POSIX_QUTEST}
+		PUBLIC
+		Threads::Threads
+)
+
+set_target_properties(${POSIX_QUTEST} PROPERTIES VERSION ${${CMAKE_PROJECT_NAME}_VERSION_SHORT})
+set_target_properties(${POSIX_QUTEST} PROPERTIES SOVERSION ${${CMAKE_PROJECT_NAME}_VERSION_SHORT})
+set_target_properties(${POSIX_QUTEST}
+		PROPERTIES
+		PUBLIC_HEADER
+		"${${POSIX_QUTEST}_PUBLIC_HEADERS}"
+		)
+
+# add the install targets
+install (
+		TARGETS		${POSIX_QUTEST}
+		EXPORT		${POSIX_QUTEST}_targets
+		LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT shlib
+		ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+		PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${POSIX_QUTEST}
+		INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${POSIX_QUTEST}
+)
+
+# -- write cmake package config file
+write_basic_package_version_file(
+		"${CMAKE_CURRENT_BINARY_DIR}/${POSIX_QUTEST}/${POSIX_QUTEST}-config-version.cmake"
+		VERSION ${CMAKE_PROJECT_NAME}_VERSION_SHORT
+		COMPATIBILITY AnyNewerVersion
+)
+
+export(EXPORT ${POSIX_QUTEST}_targets
+		FILE "${CMAKE_CURRENT_BINARY_DIR}/${POSIX_QUTEST}/${POSIX_QUTEST}-targets.cmake"
+		NAMESPACE qp::
+		)
+
+configure_file(cmake/${POSIX_QUTEST}-config.cmake
+		"${CMAKE_CURRENT_BINARY_DIR}/${POSIX_QUTEST}/${POSIX_QUTEST}-config.cmake"
+		COPYONLY
+		)
+
+set(ConfigPackageLocation lib/cmake/${POSIX_QUTEST})
+
+install(EXPORT ${POSIX_QUTEST}_targets
+		FILE ${POSIX_QUTEST}-targets.cmake
+		NAMESPACE qp::
+		DESTINATION ${ConfigPackageLocation}
+		)
+
+install(
+		FILES cmake/${POSIX_QUTEST}-config.cmake
+		"${CMAKE_CURRENT_BINARY_DIR}/${POSIX_QUTEST}/${POSIX_QUTEST}-config-version.cmake"
+		DESTINATION ${ConfigPackageLocation}
+		COMPONENT Devel
+)
