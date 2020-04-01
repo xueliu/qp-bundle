@@ -13,7 +13,7 @@ macro(INSTALL_WITH_HIERARCHY FILE_LIST DEST)
 endmacro(INSTALL_WITH_HIERARCHY)
 
 add_library(${POSIX_QV} "")
-add_library(qpcpp::${POSIX_QV} ALIAS ${POSIX_QV})
+add_library(qp::${POSIX_QV} ALIAS ${POSIX_QV})
 
 target_compile_options(
 	${POSIX_QV}
@@ -136,7 +136,7 @@ install(
 )
 
 add_library(${POSIX} "")
-add_library(qpcpp::${POSIX} ALIAS ${POSIX})
+add_library(qp::${POSIX} ALIAS ${POSIX})
 
 target_compile_options(
 	${POSIX}
