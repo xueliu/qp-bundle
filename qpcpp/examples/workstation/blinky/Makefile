@@ -115,25 +115,28 @@ QP_PORT_DIR := $(QPCPP)/ports/posix-qv
 
 CPP_SRCS += \
 	qep_hsm.cpp \
-	qep_msm.cpp \
 	qf_act.cpp \
 	qf_actq.cpp \
-	qf_defer.cpp \
 	qf_dyn.cpp \
 	qf_mem.cpp \
-	qf_ps.cpp \
 	qf_qact.cpp \
 	qf_qeq.cpp \
-	qf_qmact.cpp \
 	qf_time.cpp \
 	qf_port.cpp
 
-QS_SRCS := \
-	qs.cpp \
-	qs_64bit.cpp \
-	qs_rx.cpp \
-	qs_fp.cpp \
-	qs_port.cpp
+#	qf_qmact.cpp
+#	qep_msm.cpp \
+#	qf_ps.cpp \
+#	qf_defer.cpp \
+
+
+
+#QS_SRCS := \
+#	qs.cpp \
+#	qs_64bit.cpp \
+#	qs_rx.cpp \
+#	qs_fp.cpp \
+#	qs_port.cpp
 
 LIBS += -lpthread
 

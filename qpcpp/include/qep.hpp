@@ -412,19 +412,19 @@ protected:
         return Q_RET_TRAN_XP;
     }
 
-#ifdef Q_SPY
-    //! Helper function to specify a state entry in a QM state-handler
-    QState qm_entry(QMState const * const s) noexcept {
-        m_temp.obj = s;
-        return Q_RET_ENTRY;
-    }
+// #ifdef Q_SPY
+//     //! Helper function to specify a state entry in a QM state-handler
+//     QState qm_entry(QMState const * const s) noexcept {
+//         m_temp.obj = s;
+//         return Q_RET_ENTRY;
+//     }
 
-    //! Helper function to specify a state exit in a QM state-handler
-    QState qm_exit(QMState const * const s) noexcept {
-        m_temp.obj = s;
-        return Q_RET_EXIT;
-    }
-#else
+//     //! Helper function to specify a state exit in a QM state-handler
+//     QState qm_exit(QMState const * const s) noexcept {
+//         m_temp.obj = s;
+//         return Q_RET_EXIT;
+//     }
+// #else
     //! Helper function to specify a state entry in a QM state-handler
     QState qm_entry(QMState const * const s) noexcept {
         (void)s;
@@ -436,7 +436,7 @@ protected:
         (void)s;
         return Q_RET_EXIT;
     }
-#endif
+// #endif
 
     //! Helper function to specify a submachine exit in a QM state-handler
     QState qm_sm_exit(QMState const * const s) noexcept {

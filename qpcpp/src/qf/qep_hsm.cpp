@@ -150,12 +150,12 @@ void QHsm::init(void const * const e) {
     // the top-most initial transition must be taken
     Q_ASSERT_ID(210, r == Q_RET_TRAN);
 
-    QS_CRIT_STAT_
-    QS_BEGIN_PRE_(QS_QEP_STATE_INIT, QS::priv_.locFilter[QS::SM_OBJ], this)
-        QS_OBJ_PRE_(this);       // this state machine object
-        QS_FUN_PRE_(t);          // the source state
-        QS_FUN_PRE_(m_temp.fun); // the target of the initial transition
-    QS_END_PRE_()
+    // QS_CRIT_STAT_
+    // QS_BEGIN_PRE_(QS_QEP_STATE_INIT, QS::priv_.locFilter[QS::SM_OBJ], this)
+    //     QS_OBJ_PRE_(this);       // this state machine object
+    //     QS_FUN_PRE_(t);          // the source state
+    //     QS_FUN_PRE_(m_temp.fun); // the target of the initial transition
+    // QS_END_PRE_()
 
     // drill down into the state hierarchy with initial transitions...
     do {
@@ -182,25 +182,25 @@ void QHsm::init(void const * const e) {
 
         r = QEP_TRIG_(t, Q_INIT_SIG); // execute initial transition
 
-#ifdef Q_SPY
-        if (r == Q_RET_TRAN) {
-            QS_BEGIN_PRE_(QS_QEP_STATE_INIT,
-                          QS::priv_.locFilter[QS::SM_OBJ], this)
-                QS_OBJ_PRE_(this);       // this state machine object
-                QS_FUN_PRE_(t);          // the source state
-                QS_FUN_PRE_(m_temp.fun); // the target of the initial tran.
-            QS_END_PRE_()
-        }
-#endif // Q_SPY
+// #ifdef Q_SPY
+//         if (r == Q_RET_TRAN) {
+//             QS_BEGIN_PRE_(QS_QEP_STATE_INIT,
+//                           QS::priv_.locFilter[QS::SM_OBJ], this)
+//                 QS_OBJ_PRE_(this);       // this state machine object
+//                 QS_FUN_PRE_(t);          // the source state
+//                 QS_FUN_PRE_(m_temp.fun); // the target of the initial tran.
+//             QS_END_PRE_()
+//         }
+// #endif // Q_SPY
 
     } while (r == Q_RET_TRAN);
 
-    QS_BEGIN_PRE_(QS_QEP_INIT_TRAN,
-                  QS::priv_.locFilter[QS::SM_OBJ], this)
-        QS_TIME_PRE_();    // time stamp
-        QS_OBJ_PRE_(this); // this state machine object
-        QS_FUN_PRE_(t);    // the new active state
-    QS_END_PRE_()
+    // QS_BEGIN_PRE_(QS_QEP_INIT_TRAN,
+    //               QS::priv_.locFilter[QS::SM_OBJ], this)
+    //     QS_TIME_PRE_();    // time stamp
+    //     QS_OBJ_PRE_(this); // this state machine object
+    //     QS_FUN_PRE_(t);    // the new active state
+    // QS_END_PRE_()
 
     m_state.fun = t; // change the current active state
     m_temp.fun  = t; // mark the configuration as stable
@@ -240,20 +240,20 @@ QState QHsm::top(void * const me, QEvt const * const e) noexcept {
 ///
 void QHsm::dispatch(QEvt const * const e) {
     QStateHandler t = m_state.fun;
-    QS_CRIT_STAT_
+    // QS_CRIT_STAT_
 
     /// @pre the current state must be initialized and
     /// the state configuration must be stable
     Q_REQUIRE_ID(400, (t != nullptr)
                        && (t == m_temp.fun));
 
-    QS_BEGIN_PRE_(QS_QEP_DISPATCH,
-                  QS::priv_.locFilter[QS::SM_OBJ], this)
-        QS_TIME_PRE_();         // time stamp
-        QS_SIG_PRE_(e->sig);    // the signal of the event
-        QS_OBJ_PRE_(this);      // this state machine object
-        QS_FUN_PRE_(t);         // the current state
-    QS_END_PRE_()
+    // QS_BEGIN_PRE_(QS_QEP_DISPATCH,
+    //               QS::priv_.locFilter[QS::SM_OBJ], this)
+    //     QS_TIME_PRE_();         // time stamp
+    //     QS_SIG_PRE_(e->sig);    // the signal of the event
+    //     QS_OBJ_PRE_(this);      // this state machine object
+    //     QS_FUN_PRE_(t);         // the current state
+    // QS_END_PRE_()
 
     QStateHandler s;
     QState r;
@@ -264,12 +264,12 @@ void QHsm::dispatch(QEvt const * const e) {
 
         if (r == Q_RET_UNHANDLED) { // unhandled due to a guard?
 
-            QS_BEGIN_PRE_(QS_QEP_UNHANDLED,
-                          QS::priv_.locFilter[QS::SM_OBJ], this)
-                QS_SIG_PRE_(e->sig); // the signal of the event
-                QS_OBJ_PRE_(this);   // this state machine object
-                QS_FUN_PRE_(s);      // the current state
-            QS_END_PRE_()
+            // QS_BEGIN_PRE_(QS_QEP_UNHANDLED,
+            //               QS::priv_.locFilter[QS::SM_OBJ], this)
+            //     QS_SIG_PRE_(e->sig); // the signal of the event
+            //     QS_OBJ_PRE_(this);   // this state machine object
+            //     QS_FUN_PRE_(s);      // the current state
+            // QS_END_PRE_()
 
             r = QEP_TRIG_(s, QEP_EMPTY_SIG_); // find superstate of s
         }
@@ -299,18 +299,18 @@ void QHsm::dispatch(QEvt const * const e) {
 
         std::int_fast8_t ip = hsm_tran(path); // take the HSM transition
 
-#ifdef Q_SPY
-        if (r == Q_RET_TRAN_HIST) {
+// #ifdef Q_SPY
+//         if (r == Q_RET_TRAN_HIST) {
 
-            QS_BEGIN_PRE_(QS_QEP_TRAN_HIST,
-                          QS::priv_.locFilter[QS::SM_OBJ], this)
-                QS_OBJ_PRE_(this);     // this state machine object
-                QS_FUN_PRE_(t);        // the source of the transition
-                QS_FUN_PRE_(path[0]);  // the target of the tran. to history
-            QS_END_PRE_()
+//             QS_BEGIN_PRE_(QS_QEP_TRAN_HIST,
+//                           QS::priv_.locFilter[QS::SM_OBJ], this)
+//                 QS_OBJ_PRE_(this);     // this state machine object
+//                 QS_FUN_PRE_(t);        // the source of the transition
+//                 QS_FUN_PRE_(path[0]);  // the target of the tran. to history
+//             QS_END_PRE_()
 
-        }
-#endif // Q_SPY
+//         }
+// #endif // Q_SPY
 
         // retrace the entry path in reverse (desired) order...
         for (; ip >= 0; --ip) {
@@ -353,40 +353,40 @@ void QHsm::dispatch(QEvt const * const e) {
             t = path[0];
         }
 
-        QS_BEGIN_PRE_(QS_QEP_TRAN,
-                      QS::priv_.locFilter[QS::SM_OBJ], this)
-            QS_TIME_PRE_();          // time stamp
-            QS_SIG_PRE_(e->sig);     // the signal of the event
-            QS_OBJ_PRE_(this);       // this state machine object
-            QS_FUN_PRE_(s);          // the source of the transition
-            QS_FUN_PRE_(t);          // the new active state
-        QS_END_PRE_()
+        // QS_BEGIN_PRE_(QS_QEP_TRAN,
+        //               QS::priv_.locFilter[QS::SM_OBJ], this)
+        //     QS_TIME_PRE_();          // time stamp
+        //     QS_SIG_PRE_(e->sig);     // the signal of the event
+        //     QS_OBJ_PRE_(this);       // this state machine object
+        //     QS_FUN_PRE_(s);          // the source of the transition
+        //     QS_FUN_PRE_(t);          // the new active state
+        // QS_END_PRE_()
     }
 
-#ifdef Q_SPY
-    else if (r == Q_RET_HANDLED) {
+// #ifdef Q_SPY
+//     else if (r == Q_RET_HANDLED) {
 
-        QS_BEGIN_PRE_(QS_QEP_INTERN_TRAN,
-                      QS::priv_.locFilter[QS::SM_OBJ], this)
-            QS_TIME_PRE_();          // time stamp
-            QS_SIG_PRE_(e->sig);     // the signal of the event
-            QS_OBJ_PRE_(this);       // this state machine object
-            QS_FUN_PRE_(s);          // the source state
-        QS_END_PRE_()
+//         QS_BEGIN_PRE_(QS_QEP_INTERN_TRAN,
+//                       QS::priv_.locFilter[QS::SM_OBJ], this)
+//             QS_TIME_PRE_();          // time stamp
+//             QS_SIG_PRE_(e->sig);     // the signal of the event
+//             QS_OBJ_PRE_(this);       // this state machine object
+//             QS_FUN_PRE_(s);          // the source state
+//         QS_END_PRE_()
 
-    }
-    else {
+//     }
+//     else {
 
-        QS_BEGIN_PRE_(QS_QEP_IGNORED,
-                      QS::priv_.locFilter[QS::SM_OBJ], this)
-            QS_TIME_PRE_();          // time stamp
-            QS_SIG_PRE_(e->sig);     // the signal of the event
-            QS_OBJ_PRE_(this);       // this state machine object
-            QS_FUN_PRE_(m_state.fun);// the current state
-        QS_END_PRE_()
+//         QS_BEGIN_PRE_(QS_QEP_IGNORED,
+//                       QS::priv_.locFilter[QS::SM_OBJ], this)
+//             QS_TIME_PRE_();          // time stamp
+//             QS_SIG_PRE_(e->sig);     // the signal of the event
+//             QS_OBJ_PRE_(this);       // this state machine object
+//             QS_FUN_PRE_(m_state.fun);// the current state
+//         QS_END_PRE_()
 
-    }
-#endif // Q_SPY
+//     }
+// #endif // Q_SPY
 
     m_state.fun = t; // change the current active state
     m_temp.fun  = t; // mark the configuration as stable
